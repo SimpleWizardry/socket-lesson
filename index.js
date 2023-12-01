@@ -17,6 +17,8 @@ io.on('connection', (socket) => {
     socket.on('privateMessage', id => {
         io.to(id).emit('message', 'ПИШУ В ЛИЧКУ')
     })
+
+    console.log('sadasd')
     // console.log('a user connected');
     // socket.emit("message", {text: "Welcome", chatId: socket.id});
     // socket.on("chatMessage", (text) => console.log(text))
